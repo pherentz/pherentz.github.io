@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Forum</title>
+    <title>Enhanced Forum</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Simple Forum</h1>
+        <h1>Enhanced Forum</h1>
+        <div id="theme-toggle">
+            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+        </div>
         <div id="post-form">
             <input type="text" id="post-title" placeholder="Post Title" required>
             <textarea id="post-content" placeholder="Post Content" required></textarea>
             <button id="submit-post">Submit Post</button>
         </div>
+        <input type="text" id="search-bar" placeholder="Search posts..." oninput="searchPosts()">
         <div id="posts">
             <h2>Posts</h2>
             <div id="post-list"></div>
